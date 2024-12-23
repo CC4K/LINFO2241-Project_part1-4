@@ -1,0 +1,42 @@
+# Removing files without extension (executables)
+*
+!/**/
+!*.*
+# Keeping the makefiles
+!**/Makefile
+
+# Environments
+.env
+.venv
+.idea/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.vscode
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+*.bin
+*.data
+
+# Project specific files
+**/build/**
+nginx*/
+!nginx-conf/
+**/.cache/**
+**/compile_commands.json 
+**/*.bin
+
+wrk2/
+wrk/
+project/measurements/
+project/*.csv
+project/*.png
+project/*.svg
+
+project.tar.gz
